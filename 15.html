@@ -7,19 +7,23 @@ var x1_kuc=prompt("x1="," ");
 
 var x2_kuc=prompt("x2="," ");
 
+var x1=parseFloat(x1_kuc);
+
+var x2=parseFloat(x2_kuc);
+
 document.write("x1="+x1_kuc+" x2="+x2_kuc);
 
-var y=3 * Math.pow(x1_kuc,(8/8+2));
+var y=3 * Math.pow(x1_kuc,(8/10));
 
-document.write("<br>y= 3* "+x1_kuc+"^(8/8+2)"+"="+y.tofixed(2));
+document.write("<br>y= 3* "+x1_kuc+"^(8/8+2)"+"="+y.toFixed(2));
 
 var y1=(2 * Math.cos(x1_kuc * Math.PI / 180)) + (2 * Math.sin(x1_kuc * Math.PI /180));
 
 document.write("<br>y1 = 2* cos "+x1_kuc+" +  2 *  sin "+x1_kuc+" = "+y1.toFixed(2));
 
-var y3=Math.pow(Math.pow(x1_kuc,5) + (2*Math.pow(x2_kuc,4),1/3) * Math.abs((+x1_kuc)-(+x2_kuc));
+var y3=Math.cbrt(Math.pow(x1,5) + (2 * Math.pow(x2,4)));
 
-document.write("<br>y3 = √3(("+x1_kuc+")^5 + 2 * ("+x2_kuc+")^4) * |"+x1_kuc+" - "+x2_kuc+"| = "+y3.toFixed(2));
+/*document.write("<br>y3 = √3(("+x1_kuc+")^5 + 2 * ("+x2_kuc+")^4) * |"+x1_kuc+" - "+x2_kuc+"| = "+y3.toFixed(2));*/
  
 </script>
 </div>
